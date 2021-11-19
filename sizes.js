@@ -1,11 +1,14 @@
 snake.size = function(settings = {}) {
-  settings.width        = 4;
-  settings.height       = 4;
-  let squareSize = 600 / settings.width;
-  if(squareSize * settings.height > 530)
-    squareSize = 530 / settings.height;
-
-
+  settings.lightSquares = settings.lightSquares || (settings.dark ? '#47404F' : '#AAD751');
+  settings.darkSquares = settings.darkSquares || (settings.dark ? '#423C49' : '#A2D149');
+  
+  img = new Image;
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/tiny-1.png';
+  img.width = 47;
+  img.height = 47;
+  document.querySelector('#size').appendChild(img);
+  
+    // making do things
   const scripts = document.getElementsByTagName('script');
   for(let script of scripts) {
     const req = new XMLHttpRequest();
@@ -15,29 +18,17 @@ snake.size = function(settings = {}) {
       if(code.indexOf('#A2') === -1)
         return;
 
-      const icon = new Image();
-      icon.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png';
-      icon.width = 47;
-      icon.height = 47;
-      if(document.querySelector('#size').childElementCount > 3)
-        for(let i = document.querySelector('#size').childElementCount - 1; i >= 3; i--)
-          document.querySelector('#size').removeChild(document.querySelector('#size').children[i]);
-      document.querySelector('#size').appendChild(icon);
-      
-      const c = code.match(
-        /[a-zA-Z0-9_$]{1,8}\.prototype\.[a-zA-Z0-9_$]{1,8}=function\(\){var a=this,b=[^]*?canvas[^]*?\);return b\.promise}/
-      )[0];
-      const wa = c.match(
-        /a\.[a-zA-Z0-9_$]{1,8}\/128/
-      )[0].replace('/128', '');
-      const size = code.match(
-        /1===this\.[a-zA-Z0-9_$]{1,8}\|\|\(e\+=1\)/
-      )[0].replace('1===this.', '').replace('||(e+=1)', '');
-      console.log(size);
+      eval(
+        code.match(
+          /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
+        )[0].replace(
+          '96;',
+          `96;case 3:return 36;case 4:return 36;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
+        )
       );
     };
     req.send();
   }
 };
 
-snake.size()
+window.snake.size()
