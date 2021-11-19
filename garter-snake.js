@@ -41,8 +41,15 @@ snake.garter = function(settings = {}) {
   img.class = 'DqMRee SsAred';
   document.querySelector('#speed').appendChild(img);
   
-  img = new Image; // Fly...
+  img = new Image; // Fly
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/annoying shit.png';
+  img.width = 47;
+  img.height = 47;
+  img.class = 'DqMRee SsAred';
+  document.querySelector('#speed').appendChild(img);
+  
+  img = new Image; // Bullet
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/bullet.png';
   img.width = 47;
   img.height = 47;
   img.class = 'DqMRee SsAred';
@@ -71,7 +78,7 @@ snake.garter = function(settings = {}) {
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};`
+          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.25;`
         )
       );
 
