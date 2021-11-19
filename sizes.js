@@ -34,17 +34,6 @@ snake.size = function(settings = {}) {
         /1===this\.[a-zA-Z0-9_$]{1,8}\|\|\(e\+=1\)/
       )[0].replace('1===this.', '').replace('||(e+=1)', '');
       console.log(size);
-
-        c.replaceAll(
-          '#AAD751',
-          settings.lightSquares
-        ).replaceAll(
-          '#A2D149',
-          settings.darkSquares
-        ).replace(
-          `Math.floor(c/${wa}),Math.floor(d/${wa})));`,
-          `a.${size} === 3 ? ${settings.width} : Math.floor(c/${wa}), a.${size} === 3 ? ${settings.height} : Math.floor(d/${wa})));a.${size} === 3 && (${wa} = ${squareSize});console.log(a.${size});`
-        )
       );
     };
     req.send();
