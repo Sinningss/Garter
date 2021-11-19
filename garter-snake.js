@@ -3,11 +3,6 @@ snake.garter = function(settings = {}) {
   while (cussize !== parseInt(cussize, 10).toString()) {
     cussize = prompt("Bruh just enter a damn number");
   }
-    
-      var cussped = prompt("Enter custom speed number (0.01 is fastest)") // ask for number stuff, will be made better sometime later
-  while (true !== isNaN(parseInt(cussped, 10).toString())) {
-    cussped = prompt("Bruh just enter a damn number");
-  }
   
   // STAGE SIZES //
   
@@ -79,10 +74,11 @@ snake.garter = function(settings = {}) {
       const a = code.match(new RegExp(
         `this\\.[a-zA-Z0-9_$]{1,6}=[a-zA-Z0-9_$]{1,6}\\*${limename}\\(this\\);`
       ))[0];
+      var rand = Math.random()
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return ${cussped};case 4:return _soup;case 5:return 2;case 6:return Infinity;case 7:return _puos;`
+          `1.33;case 3:return ${rand};case 4:return _soup;case 5:return 2;case 6:return Infinity;case 7:return _puos;`
         )
       );
 
