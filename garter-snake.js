@@ -1,13 +1,11 @@
 snake.garter = function(settings = {}) {
   var darktheme;
-  function myFunction() {
-    var r = confirm("Press a button!");
-    if (r == true) {
+  var result = confirm("Dark theme?");
+    if (result == true) {
       darktheme = true;
     } else {
       darktheme = false;
     }
-  }
   
   // STAGE SIZES //
   
