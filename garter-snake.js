@@ -82,12 +82,10 @@ snake.garter = function(settings = {}) {
         `this\\.[a-zA-Z0-9_$]{1,6}=[a-zA-Z0-9_$]{1,6}\\*${limename}\\(this\\);`
       ))[0];
       var rand = Math.random()
-      var gas = 1
-      gas = gas + 0.1
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.25;case 8:return ${gas};`
+          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.25;case 8:return 0.1;`
         )
       );
 
