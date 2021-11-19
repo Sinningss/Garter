@@ -1,2 +1,2 @@
-# GoogleSnakeModAttempt
-i dont even know
+# Garter
+This will eventually be a easily customizable Google Snake mod, with a full tutorial. But not yet.
