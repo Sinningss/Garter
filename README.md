@@ -16,6 +16,9 @@ You can set the script below as a bookmark. Then, when you get into Google Snake
  ###### Zzz...
  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
  
+ ###### Fly
+ Random speed every time you get an apple.
+ 
 ### Current Stages
 
 ###### Custom Stage Size
