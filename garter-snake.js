@@ -73,7 +73,7 @@ snake.garter = function(settings = {}) {
           `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return _puos;`
         )
       );
-      
+
       const soup = code.match(
         /[a-zA-Z0-9_$]{1,6}\.prototype\.update=function\(\){[^]*?this\)}}}}/
       )[0];
@@ -89,20 +89,6 @@ snake.garter = function(settings = {}) {
         )
       );
       
-      const puos = code.match(
-        /[a-zA-Z0-9_$]{1,6}\.prototype\.update=function\(\){[^]*?this\)}}}}/
-      )[0];
-      const f = puos.match(
-        /:this\.[a-zA-Z0-9_$]{1,6}\+=1;this\.[a-zA-Z0-9_$]{1,6}\+\+;/
-      )[0];
-      eval('var _puos = 1.33;');
-      eval('var _peos = 1.85;');
-      eval(
-        puos.replace(
-          f,
-          f + `_puos = Math.random(0.45,1.95)`
-        )
-      );
       
       // stuff that makes stages function
       eval(
@@ -110,7 +96,7 @@ snake.garter = function(settings = {}) {
           /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
         )[0].replace(
           '96;',
-          `96;case 3:return ${cussize};case 4:return 36;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
+          `96;case 3:return 1;case 4:return 36;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
         )
       );
     };
