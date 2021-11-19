@@ -48,15 +48,15 @@ snake.garter = function(settings = {}) {
   img.class = 'DqMRee SsAred';
   document.querySelector('#speed').appendChild(img);
   
-  img = new Image; // Bullet
-  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/bullet.png';
+    img = new Image; // Gas
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/car.png';
   img.width = 47;
   img.height = 47;
   img.class = 'DqMRee SsAred';
   document.querySelector('#speed').appendChild(img);
   
-  img = new Image; // Gas
-  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/car.png';
+  img = new Image; // Bullet
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/bullet.png';
   img.width = 47;
   img.height = 47;
   img.class = 'DqMRee SsAred';
