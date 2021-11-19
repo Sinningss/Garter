@@ -14,9 +14,7 @@ You can set the script below as a bookmark. Then, when you get into Google Snake
  FFFFFFooooooooooooooorrrrrrrrrrrr iiiiiiiiiiiiidddddddddddddiiiiiiiiiiiiiiiiiooooooooooooootttttttttttssssssssssss..............
  
  ###### Zzz...
- 
- ###### Fly
- Random speeds, sometimes fast, sometimes slow.
+ zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
  
 ### Current Stages
 
