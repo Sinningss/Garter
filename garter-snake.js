@@ -54,6 +54,14 @@ snake.garter = function(settings = {}) {
   img.height = 47;
   img.class = 'DqMRee SsAred';
   document.querySelector('#speed').appendChild(img);
+  
+  img = new Image; // Gas
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/car.png';
+  img.width = 47;
+  img.height = 47;
+  img.class = 'DqMRee SsAred';
+  document.querySelector('#speed').appendChild(img);
+  var gas = 1
 
   // actual stuff
   const scripts = document.getElementsByTagName('script');
@@ -75,10 +83,11 @@ snake.garter = function(settings = {}) {
         `this\\.[a-zA-Z0-9_$]{1,6}=[a-zA-Z0-9_$]{1,6}\\*${limename}\\(this\\);`
       ))[0];
       var rand = Math.random()
+      gas = gas + 0.1
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.25;`
+          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.25;case 8:return ${gas};`
         )
       );
 
