@@ -61,7 +61,6 @@ snake.garter = function(settings = {}) {
   img.height = 47;
   img.class = 'DqMRee SsAred';
   document.querySelector('#speed').appendChild(img);
-  var gas = 1
 
   // actual stuff
   const scripts = document.getElementsByTagName('script');
@@ -83,6 +82,7 @@ snake.garter = function(settings = {}) {
         `this\\.[a-zA-Z0-9_$]{1,6}=[a-zA-Z0-9_$]{1,6}\\*${limename}\\(this\\);`
       ))[0];
       var rand = Math.random()
+      var gas = 1
       gas = gas + 0.1
       eval(
         limesarebetter.replace(
