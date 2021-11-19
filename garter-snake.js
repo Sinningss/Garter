@@ -100,11 +100,12 @@ snake.garter = function(settings = {}) {
       
       // stuff that makes stages function
         var ps;
+        ps = picksize();
       eval(
         code.match(
           /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
         )[0].replace(
-          ps = picksize();
+          
           '96;',
           `96;case 3:return ${ps};case 4:return 36;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
         )
