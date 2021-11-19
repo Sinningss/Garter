@@ -1,4 +1,13 @@
 snake.garter = function(settings = {}) {
+  var darktheme;
+  function myFunction() {
+    var r = confirm("Press a button!");
+    if (r == true) {
+      darktheme = true;
+    } else {
+      darktheme = false;
+    }
+  }
   
   // STAGE SIZES //
   
@@ -9,7 +18,8 @@ snake.garter = function(settings = {}) {
   document.querySelector('#size').appendChild(img);
   
   // THEMES //
-  img = new Image; // Tiny Stage
+  
+  img = new Image; // Dark Theme (not working)
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/darktheme.png';
   img.width = 47;
   img.height = 47;
