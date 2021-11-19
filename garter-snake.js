@@ -3,7 +3,7 @@ snake.size = function(settings = {}) {
   settings.darkSquares = settings.darkSquares || (settings.dark ? '#423C49' : '#A2D149');
   
   img = new Image;
-  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/tiny-1.png';
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/tiny.png';
   img.width = 47;
   img.height = 47;
   document.querySelector('#size').appendChild(img);
