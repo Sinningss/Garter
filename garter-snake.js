@@ -1,5 +1,5 @@
 snake.garter = function(settings = {}) {
-    var cussize = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
+  var cussize = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
   while (cussize !== parseInt(cussize, 10).toString()) {
     cussize = prompt("Bruh just enter a damn number");
   }
