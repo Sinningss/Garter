@@ -85,7 +85,7 @@ snake.garter = function(settings = {}) {
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.25;case 8:return 0.1;`
+          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.1;case 8:return 0.25;`
         )
       );
 
