@@ -37,7 +37,7 @@ snake.garter = function(settings = {}) {
           /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
         )[0].replace(
           '96;',
-          `96;case 3:return 36;case 4:return 1;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
+          `96;case 3:return 1;case 4:return 36;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
         )
       );
     };
