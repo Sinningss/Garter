@@ -3,13 +3,10 @@ snake.garter = function(settings = {}) {
   while (cussize !== parseInt(cussize, 10).toString()) {
     cussize = prompt("Bruh just enter a damn number");
   }
-  
-  function pickSize() {
-  var cussize = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
-  while (cussize !== parseInt(cussize, 10).toString()) {
-    cussize = prompt("Bruh just enter a damn number");
-  }
-  return cussize;
+    
+      var cussped = prompt("Enter custom speed number (0.01 is fastest)") // ask for number stuff, will be made better sometime later
+  while (cussped !== parseInt(cussped, 10).toString()) {
+    cussped = prompt("Bruh just enter a damn number");
   }
   
   // STAGE SIZES //
@@ -28,6 +25,13 @@ snake.garter = function(settings = {}) {
   
   // SPEEDS //
   
+  img = new Image; // Custom Speed
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/custom.png';
+  img.width = 47;
+  img.height = 47;
+  img.class = 'DqMRee SsAred';
+  document.querySelector('#speed').appendChild(img);
+    
   img = new Image; // Anxiety
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/nervous.png';
   img.width = 47;
@@ -78,7 +82,7 @@ snake.garter = function(settings = {}) {
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return _puos;`
+          `1.33;case 3:return ${cussped};case 4:return _soup;case 5:return 2;case 6:return Infinity;case 7:return _puos;`
         )
       );
 
