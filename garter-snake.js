@@ -1,4 +1,5 @@
-snake.garter = function(settings = {}) {
+snake.garter = function() {
+  document.getElementsByTagName('div')[0].style = 'position:relative;top:50%;transform:translate(0%,-50%);margin:auto;'; 
   var cussize = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
   while (cussize !== parseInt(cussize, 10).toString()) {
     cussize = prompt("Bruh just enter a damn number");
