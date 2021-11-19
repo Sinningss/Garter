@@ -1,14 +1,10 @@
-snake.size = function(settings = {}) {
-  settings.lightSquares = settings.lightSquares || (settings.dark ? '#47404F' : '#AAD751');
-  settings.darkSquares = settings.darkSquares || (settings.dark ? '#423C49' : '#A2D149');
-  
-  img = new Image;
+snake.garter = function(settings = {}) {
+  img = new Image; // Tiny Stage
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/tiny.png';
   img.width = 47;
   img.height = 47;
   document.querySelector('#size').appendChild(img);
   
-    // making do things
   const scripts = document.getElementsByTagName('script');
   for(let script of scripts) {
     const req = new XMLHttpRequest();
@@ -17,7 +13,8 @@ snake.size = function(settings = {}) {
       const code = this.responseText;
       if(code.indexOf('#A2') === -1)
         return;
-
+      
+      // stuff that makes stages function
       eval(
         code.match(
           /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
@@ -31,4 +28,4 @@ snake.size = function(settings = {}) {
   }
 };
 
-window.snake.size()
+window.snake.garter()
