@@ -19,13 +19,6 @@ snake.garter = function(settings = {}) {
   document.querySelector('#size').appendChild(img);
   
   // SPEEDS //
-  
-  img = new Image; // Custom Speed
-  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/custom.png';
-  img.width = 47;
-  img.height = 47;
-  img.class = 'DqMRee SsAred';
-  document.querySelector('#speed').appendChild(img);
     
   img = new Image; // Anxiety
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/nervous.png';
