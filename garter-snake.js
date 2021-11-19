@@ -49,7 +49,7 @@ snake.garter = function(settings = {}) {
   document.querySelector('#speed').appendChild(img);
   
   img = new Image; // Bullet
-  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/gun.png';
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/bullet.png';
   img.width = 47;
   img.height = 47;
   img.class = 'DqMRee SsAred';
