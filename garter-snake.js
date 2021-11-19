@@ -1,9 +1,19 @@
 snake.garter = function(settings = {}) {
+  
+  // STAGE SIZES //
+  
   img = new Image; // Tiny Stage
-  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/tiny.png';
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/tiny.png';
   img.width = 47;
   img.height = 47;
   document.querySelector('#size').appendChild(img);
+  
+  // THEMES //
+  img = new Image; // Tiny Stage
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/darktheme.png';
+  img.width = 47;
+  img.height = 47;
+  document.querySelector('#color').appendChild(img);
   
   const scripts = document.getElementsByTagName('script');
   for(let script of scripts) {
