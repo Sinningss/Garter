@@ -33,9 +33,16 @@ snake.garter = function(settings = {}) {
   img.height = 47;
   img.class = 'DqMRee SsAred';
   document.querySelector('#speed').appendChild(img);
-  
+ 
   img = new Image; // Zzz...
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/zzz.png';
+  img.width = 47;
+  img.height = 47;
+  img.class = 'DqMRee SsAred';
+  document.querySelector('#speed').appendChild(img);
+  
+  img = new Image; // Fly...
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/annoying shit.png';
   img.width = 47;
   img.height = 47;
   img.class = 'DqMRee SsAred';
@@ -51,7 +58,7 @@ snake.garter = function(settings = {}) {
       if(code.indexOf('#A2') === -1)
         return;
       
-      // stuff that makes speeds work, sorry for stealing darksnakegang
+      // stuff that makes speeds work
       const limesarebetter = code.match(
         /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 1:return\.66[^}]*?1}}/
       )[0];
@@ -63,22 +70,37 @@ snake.garter = function(settings = {}) {
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;`
+          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return _puos;`
         )
       );
       
       const soup = code.match(
         /[a-zA-Z0-9_$]{1,6}\.prototype\.update=function\(\){[^]*?this\)}}}}/
       )[0];
-      const f = soup.match(
+      const p = soup.match(
         /:this\.[a-zA-Z0-9_$]{1,6}\+=1;this\.[a-zA-Z0-9_$]{1,6}\+\+;/
       )[0];
       eval('var _soup = 1.33;');
       eval('var _soep = 1.85;');
       eval(
         soup.replace(
+          p,
+          p + `_soup = Math.random() < .5 ? .66 : 1.33;_soep = Math.random() < .5 ? .45 : 1.85;${limespeed} === 3 && (${a.replace(limename + '(this);', '_soup')});${limespeed} === 6 && (${a.replace(limename + '(this);', '_soep')});`
+        )
+      );
+      
+      const puos = code.match(
+        /[a-zA-Z0-9_$]{1,6}\.prototype\.update=function\(\){[^]*?this\)}}}}/
+      )[0];
+      const f = puos.match(
+        /:this\.[a-zA-Z0-9_$]{1,6}\+=1;this\.[a-zA-Z0-9_$]{1,6}\+\+;/
+      )[0];
+      eval('var _puos = 1.33;');
+      eval('var _peos = 1.85;');
+      eval(
+        puos.replace(
           f,
-          f + `_soup = Math.random() < .5 ? .66 : 1.33;_soep = Math.random() < .5 ? .45 : 1.85;${limespeed} === 3 && (${a.replace(limename + '(this);', '_soup')});${limespeed} === 6 && (${a.replace(limename + '(this);', '_soep')});`
+          f + `_puos = Math.random(0.45,1.95)`
         )
       );
       
