@@ -22,7 +22,7 @@ You can set the script below as a bookmark. Then, when you get into Google Snake
  ###### Bullet Speed
  i am speed
  
-### Current Stages
+### Current Sizes
 
-###### Custom Stage Size
+###### Custom Size
 ###### Mini
