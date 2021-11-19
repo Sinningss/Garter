@@ -5,3 +5,20 @@ Welcome to Garter, the soon-to-be ultimate Google Snake Mod!
 You can set the script below as a bookmark. Then, when you get into Google Snake, click the bookmark to load the mod.
 
 > `javascript:fetch("https://raw.githubusercontent.com/lukasexists/Garter/main/garter-snake.js").then((response) => response.text()).then((responseText) => {eval(responseText)});`
+
+### Current Speeds
+ ###### Anxiety
+ Randomly switches from fast to slow.
+ 
+ ###### Snail
+ FFFFFFooooooooooooooorrrrrrrrrrrr iiiiiiiiiiiiidddddddddddddiiiiiiiiiiiiiiiiiooooooooooooootttttttttttssssssssssss..............
+ 
+ ###### Zzz...
+ 
+ ###### Fly
+ Random speeds, sometimes fast, sometimes slow.
+ 
+### Current Stages
+
+###### Custom Stage Size
+###### Mini
