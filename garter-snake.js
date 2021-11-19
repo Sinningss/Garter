@@ -5,7 +5,7 @@ snake.garter = function(settings = {}) {
   }
     
       var cussped = prompt("Enter custom speed number (0.01 is fastest)") // ask for number stuff, will be made better sometime later
-  while (cussped !== parseInt(cussped, 10).toString()) {
+  while (true !== isNaN(parseInt(cussped, 10).toString())) {
     cussped = prompt("Bruh just enter a damn number");
   }
   
